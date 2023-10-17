@@ -75,9 +75,9 @@ namespace Tayx.Graphy
         /// <summary>
         /// Updates the material linked with this shader graph  with the values in the float[] array.
         /// </summary>
-        public void UpdateArray()
+        public void UpdateArrayLenght()
         {
-            Image.material.SetInt( GraphValuesLength, ShaderArrayValues.Length );
+            Image.material.SetInteger( GraphValuesLength, ShaderArrayValues.Length );
         }
 
         /// <summary>

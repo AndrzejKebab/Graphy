@@ -253,8 +253,8 @@ namespace Tayx.Graphy.Audio
             m_shaderGraphHighestValues.UpdateThresholds();
 
             // Update Array
-            m_shaderGraph.UpdateArray();
-            m_shaderGraphHighestValues.UpdateArray();
+            m_shaderGraph.UpdateArrayLenght();
+            m_shaderGraphHighestValues.UpdateArrayLenght();
 
             // Average
             m_shaderGraph.Average = 0;

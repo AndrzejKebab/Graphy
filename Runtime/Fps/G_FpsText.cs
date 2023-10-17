@@ -13,6 +13,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using Tayx.Graphy.Utils.NumString;
 
 namespace Tayx.Graphy.Fps
@@ -21,12 +22,12 @@ namespace Tayx.Graphy.Fps
     {
         #region Variables -> Serialized Private
 
-        [SerializeField] private Text m_fpsText = null;
-        [SerializeField] private Text m_msText = null;
+        [SerializeField] private TextMeshProUGUI m_fpsText = null;
+        [SerializeField] private TextMeshProUGUI m_msText = null;
 
-        [SerializeField] private Text m_avgFpsText = null;
-        [SerializeField] private Text m_onePercentFpsText = null;
-        [SerializeField] private Text m_zero1PercentFpsText = null;
+        [SerializeField] private TextMeshProUGUI m_avgFpsText = null;
+        [SerializeField] private TextMeshProUGUI m_onePercentFpsText = null;
+        [SerializeField] private TextMeshProUGUI m_zero1PercentFpsText = null;
 
         #endregion
 
@@ -121,7 +122,7 @@ namespace Tayx.Graphy.Fps
         /// <param name="fps">
         /// Numeric fps value
         /// </param>
-        private void SetFpsRelatedTextColor( Text text, float fps )
+        private void SetFpsRelatedTextColor(TextMeshProUGUI text, float fps )
         {
             int roundedFps = Mathf.RoundToInt( fps );
 

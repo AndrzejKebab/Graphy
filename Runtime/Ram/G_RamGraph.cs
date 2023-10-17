@@ -222,9 +222,9 @@ namespace Tayx.Graphy.Ram
             m_shaderGraphMono.CautionThreshold = 0;
             m_shaderGraphMono.UpdateThresholds();
 
-            m_shaderGraphAllocated.UpdateArray();
-            m_shaderGraphReserved.UpdateArray();
-            m_shaderGraphMono.UpdateArray();
+            m_shaderGraphAllocated.UpdateArrayLenght();
+            m_shaderGraphReserved.UpdateArrayLenght();
+            m_shaderGraphMono.UpdateArrayLenght();
 
             // Average
 
